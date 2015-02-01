@@ -1,0 +1,55 @@
+---
+---
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic|Open+Sans+Condensed:700");
+
+$fa-font-path: "../vendor/components/fontawesome/fonts";
+@import '../vendor/components/fontawesome/scss/font-awesome';
+
+$icon-font-path: "../vendor/components/bootstrap-sass/fonts";
+@import '../vendor/components/bootstrap-sass/assets/stylesheets/_bootstrap';
+
+@import '../vendor/components/jasny-bootstrap/scss/jasny-bootstrap';
+
+html, body {
+  height: 100%;
+}
+
+.navbar-toggle {
+  float: left;
+  margin-left: 15px;
+}
+
+.navmenu {
+  z-index: 1;
+}
+
+.canvas {
+  position: relative;
+  left: 0;
+  z-index: 2;
+  min-height: 100%;
+  padding: 50px 0 0 0;
+  background: #fff;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding: 0;
+  }
+  .navbar {
+    right: auto;
+    background: none;
+    border: none;
+  }
+
+  #main-navigation {
+    right: 0;
+  }
+  .canvas {
+    padding: 0;
+  }
+}
+
+main {
+  padding-top: 75px;
+}
