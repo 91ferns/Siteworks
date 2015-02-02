@@ -27,6 +27,8 @@ layout: default
 
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ornare tellus nibh. Vestibulum sed tortor magna. Aliquam erat volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc at eleifend massa. Maecenas aliquam, augue vel dignissim dapibus, justo risus facilisis odio, eu scelerisque lacus enim ut est.</p>
 
+        <p class="lead">With 20+ years of experience, trust SiteWorks for your contracting needs.</p>
+
     </div></div>
 
   </div><!-- /.container -->
@@ -119,35 +121,35 @@ layout: default
 
       <div class="row">
 
-        <div class="col-md-3 col-sm-4">
+        <div class="col-md-3 col-xs-6 center">
 
-          <div class="bubble">
+          <a class="bubble" href="mailto:{{site.email}}">
             <i class="fa fa-at"></i>
-          </div>
+          </a>
 
         </div>
 
-        <div class="col-md-3 col-sm-4">
+        <div class="col-md-3 col-xs-6 center">
 
-          <div class="bubble">
+          <a class="bubble" href="tel:{{site.phone}}" data-phone="{{site.phone}}">
             <i class="fa fa-phone"></i>
-          </div>
+          </a>
 
         </div>
 
-        <div class="col-md-3 col-sm-4">
+        <div class="col-md-3 col-xs-6 center">
 
-          <div class="bubble">
+          <a class="bubble" href="javascript:void(0);" data-fax="{{site.fax}}">
             <i class="fa fa-fax"></i>
-          </div>
+          </a>
 
         </div>
 
-        <div class="col-md-3 col-sm-4">
+        <div class="col-md-3 col-xs-6 center">
 
-          <div class="bubble">
+          <a class="bubble" id="contact-form" href="javascript:void(0);">
             <i class="fa fa-laptop"></i>
-          </div>
+          </a>
 
         </div>
 
@@ -171,9 +173,9 @@ layout: default
 
         <ul class="nav nav-pills">
 
-          <li class="facebook"><a href="#" class="social-pill"><i class="fa fa-facebook-official"></i></a></li>
-          <li class="twitter"><a href="#" class="social-pill"><i class="fa fa-twitter"></i></a></li>
-          <li class="instagram"><a href="#" class="social-pill"><i class="fa fa-instagram"></i></a></li>
+          <li class="facebook"><a href="{{ site.facebook_username | prepend: 'http://www.facebook.com/' }}" class="social-pill"><i class="fa fa-facebook-official"></i></a></li>
+          <li class="twitter"><a href="{{ site.twitter_username | prepend: 'http://www.twitter.com/' }}" class="social-pill"><i class="fa fa-twitter"></i></a></li>
+          <li class="instagram"><a href="{{ site.instagram_username | prepend: 'http://www.instagram.com/' }}" class="social-pill"><i class="fa fa-instagram"></i></a></li>
 
         </ul>
 

@@ -137,9 +137,12 @@ body {
     padding: 0;
   }
 }
-
 .main-push {
-  padding-top: 50px;
+  display: none;
+  @media (min-width: $screen-md-min) {
+    display: block;
+    padding-top: 50px;
+  }
 }
 
 .section-heading {
@@ -178,6 +181,10 @@ $carousel-height-main: 500px;
 
 .enshadow {
   box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.45) inset;
+}
+
+.lifted {
+  box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.45);
 }
 
 #main-callout {
@@ -235,16 +242,18 @@ $carousel-height-main: 500px;
         line-height: 1.3;
       }
 
-      &:before {
-        position: absolute;
-        width: 300%;
-        height: 100%;
-        top: 0;
-        left: -300%;
-        z-index: -1;
-        content: "";
-        background-color: $soft-red;
+      @media (min-width: $screen-md-min) {
+        &:before {
+          position: absolute;
+          width: 300%;
+          height: 100%;
+          top: 0;
+          left: -300%;
+          z-index: -1;
+          content: "";
+          background-color: $soft-red;
 
+        }
       }
 
       .caption-wrapper {
@@ -451,5 +460,20 @@ $bubble-size: 180px;
   width: $bubble-size;
   height: $bubble-size;
   line-height: $bubble-size;
+  text-align: center;
+
+  transition: box-shadow .2s;
+  margin-bottom: 15px;
+  @media (min-width: $screen-md-min) {
+    margin-bottom: 0;
+  }
+}
+
+.bubble:hover {
+  color: white;
+  @extend .lifted;
+}
+
+.center {
   text-align: center;
 }
