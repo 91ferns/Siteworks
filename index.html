@@ -2,6 +2,8 @@
 layout: default
 ---
 
+<div id="home" class="main-push"></div>
+
 <div class="jumbotron" id="main-callout">
   {% include slider.html %}
 </div>
@@ -30,23 +32,47 @@ layout: default
 
 </section>
 
-<section class="tan under-header">
+<section class="tan under-header" id="about-under">
   <div class="container">
 
     <div class="row"><div class="col-md-10 col-md-offset-1">
 
-        <p class="lead">This example demonstrates the use of the offcanvas plugin with a reveal effect.</p>
-        <p>On the contrary of the push effect, the menu doesn't move with the canvas.</p>
-        <p>You get the reveal effect by wrapping the content in a div and setting the <code>canvas</code> option to target that div.</p>
-        <p>Note that in this example, the navmenu doesn't have the <code>offcanvas</code> class, but is placed under the canvas by setting the <code>z-index</code>.</p>
-        <p>Also take a look at the examples for a navmenu with <a href="../navmenu">slide in effect</a> and <a href="../navmenu-push">push effect</a>.</p>
+        <h2>Services</h2>
+        <h3>What we do</h3>
+
+        <div class="row">
+
+          <div class="col-md-4">
+            <p>On the contrary of the push effect, the menu doesn't move with the canvas.</p>
+            <p>You get the reveal effect by wrapping the content in a div and setting the - our services include:</p>
+          </div>
+
+          <div class="col-md-3">
+            <ul class="gears">
+              <li>Concrete</li>
+              <li>Construction</li>
+              <li>Building Services</li>
+              <li>Asphalt</li>
+            </ul>
+          </div>
+
+          <div class="col-md-3">
+            <ul class="gears">
+              <li>Equipment</li>
+              <li>Bulldozing</li>
+              <li>Site work!</li>
+              <li>Other...</li>
+            </ul>
+          </div>
+
+        </div> <!-- /.row -->
 
     </div></div>
 
   </div><!-- /.container -->
 </section>
 
-<section class="banner-wrapper">
+<section class="banner-wrapper" id="projects">
 
   <div class="banner">
 
@@ -54,7 +80,7 @@ layout: default
 
       <h2>Projects</h2>
 
-      <p>A FREE RESPONSIVE SITE TEMPLATE BUILT ON HTML5, CSS3, SKEL, AND SOME OTHER STUFF</p>
+      <p>The past projects that help show our commitment to excellence</p>
 
       <p><a href="#" class="btn btn-transparent btn-lg">Check them out</a></p>
 
@@ -64,35 +90,25 @@ layout: default
 
 </section>
 
-<section id="about">
-
-  <div class="page-header">
-    <div class="container">
-      <h1 class="section-heading"><span>Projects</span></h1>
-    </div>
-  </div>
+<section id="projects-container">
 
   <div class="container">
 
-    <div class="row"><div class="col-md-10 col-md-offset-1">
+    <div class="row">
 
-      <p class="lead">This example demonstrates the use of the offcanvas plugin with a reveal effect.</p>
-      <p>On the contrary of the push effect, the menu doesn't move with the canvas.</p>
-      <p>You get the reveal effect by wrapping the content in a div and setting the <code>canvas</code> option to target that div.</p>
-      <p>Note that in this example, the navmenu doesn't have the <code>offcanvas</code> class, but is placed under the canvas by setting the <code>z-index</code>.</p>
-      <p>Also take a look at the examples for a navmenu with <a href="../navmenu">slide in effect</a> and <a href="../navmenu-push">push effect</a>.</p>
+      {% include projects.html %}
 
-    </div></div>
+    </div>
 
   </div><!-- /.container -->
 
 </section>
 
-<section id="about">
+<section id="contact">
 
   <div class="page-header">
     <div class="container">
-      <h1 class="section-heading"><span>Contact</span></h1>
+      <h1 class="section-heading"><span>Contact Us</span></h1>
     </div>
   </div>
 
@@ -100,11 +116,67 @@ layout: default
 
     <div class="row"><div class="col-md-10 col-md-offset-1">
 
-      <p class="lead">This example demonstrates the use of the offcanvas plugin with a reveal effect.</p>
-      <p>On the contrary of the push effect, the menu doesn't move with the canvas.</p>
-      <p>You get the reveal effect by wrapping the content in a div and setting the <code>canvas</code> option to target that div.</p>
-      <p>Note that in this example, the navmenu doesn't have the <code>offcanvas</code> class, but is placed under the canvas by setting the <code>z-index</code>.</p>
-      <p>Also take a look at the examples for a navmenu with <a href="../navmenu">slide in effect</a> and <a href="../navmenu-push">push effect</a>.</p>
+      <div class="row">
+
+        <div class="col-md-3 col-sm-4">
+
+          <div class="bubble">
+            <i class="fa fa-at"></i>
+          </div>
+
+        </div>
+
+        <div class="col-md-3 col-sm-4">
+
+          <div class="bubble">
+            <i class="fa fa-phone"></i>
+          </div>
+
+        </div>
+
+        <div class="col-md-3 col-sm-4">
+
+          <div class="bubble">
+            <i class="fa fa-fax"></i>
+          </div>
+
+        </div>
+
+        <div class="col-md-3 col-sm-4">
+
+          <div class="bubble">
+            <i class="fa fa-laptop"></i>
+          </div>
+
+        </div>
+
+      </div> <!-- /.row -->
+
+    </div></div>
+
+  </div><!-- /.container -->
+
+  <div class="page-header">
+    <div class="container">
+      <h1 class="section-heading"><span>Follow Us</span></h1>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="row"><div class="col-md-10 col-md-offset-1">
+
+      <div class="social-wrapper">
+
+        <ul class="nav nav-pills">
+
+          <li class="facebook"><a href="#" class="social-pill"><i class="fa fa-facebook-official"></i></a></li>
+          <li class="twitter"><a href="#" class="social-pill"><i class="fa fa-twitter"></i></a></li>
+          <li class="instagram"><a href="#" class="social-pill"><i class="fa fa-instagram"></i></a></li>
+
+        </ul>
+
+      </div>
 
     </div></div>
 

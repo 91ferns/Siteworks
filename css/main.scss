@@ -138,7 +138,7 @@ body {
   }
 }
 
-main {
+.main-push {
   padding-top: 50px;
 }
 
@@ -163,11 +163,12 @@ main {
   }
 
   span {
+    text-transform: uppercase;
     position: relative;
     z-index: 1;
     display: inline-block;
     width: auto;
-    padding: 4px 10px;
+    padding: 4px 20px;
     background-color: white;
   }
 
@@ -334,7 +335,7 @@ section.title {
 }
 
 footer {
-  margin-top: 15px;
+  margin-top: 0px;
 
   height: 60px;
   padding: 15px 0;
@@ -351,4 +352,104 @@ footer {
 .under-header {
   border-top-width: 1px;
   border-top-style: solid;
+}
+
+#contact {
+  &, .section-heading span {
+    background-color: #f2f5f3;
+  }
+  border-top: solid 5px #c1cac5;
+
+}
+
+.social-wrapper {
+  text-align: center;
+  li {
+    float: none;
+    display: inline-block;
+    position: relative;
+    a {
+      height: 48px;
+      width: 48px;
+      padding: 0px;
+      border-radius: 8px;
+      line-height: 48px;
+      text-align: center;
+      font-size: 32px;
+      margin: 0px 3px;
+    }
+  }
+
+  li:hover {
+    top: -5px;
+  }
+
+  li.facebook:hover a {background-color: #3C5A98 !important;}
+  li.instagram:hover a {background-color: #2E5E86 !important;}
+  li.twitter:hover a {background-color: #2DAAE4 !important;}
+}
+
+#contact .social-wrapper a {
+  background-color: #c1cac5;
+  color: #f2f5f3;
+}
+
+#contact .social-wrapper li {
+  transition: top .3s;
+  a {transition:  background-color .3s;}
+}
+
+ul.gears {
+  list-style-type: none;
+  li {
+    position: relative;
+    &:before {
+      content: "\f013";
+      font: normal normal normal 14px/1 FontAwesome;
+      margin-right: 4px;
+      color: $soft-red;
+      font-size: inherit;
+      position: absolute;
+      left: -1.23em;
+      top: 3px;
+    }
+    margin-bottom: 3px;
+
+    &:hover:before {
+      -webkit-animation: fa-spin 2s infinite linear;
+      animation: fa-spin 2s infinite linear;
+    }
+
+  }
+}
+
+#about-under {
+  padding: 40px 0 50px;
+  h2 {
+    margin: 0px;
+    margin-bottom: 2px;
+  }
+  h3 {
+    margin: 0px;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    color: #575d59;
+    font-size: 1.3em;
+  }
+}
+
+$bubble-size: 180px;
+
+.bubble {
+  display: inline-block;
+  font-size: $bubble-size / 2;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  background-color: $soft-red;
+
+  width: $bubble-size;
+  height: $bubble-size;
+  line-height: $bubble-size;
+  text-align: center;
 }

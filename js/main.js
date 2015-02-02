@@ -19,7 +19,7 @@ require.config({
 
 require(['jquery', 'bootstrap_js', 'jasny'], function($) {
 
-  console.log($);
-  
+  //$('body').scrollspy({ target: '#navbar' });
+
 
 });
