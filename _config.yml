@@ -8,8 +8,8 @@ twitter_username: siteworks
 facebook_username:  siteworks
 instagram_username: siteworks
 
-phone: 9149438239
-fax: 9149438239
+phone: "9149438239"
+fax: "9149438239"
 
 
 # Build settings
@@ -19,3 +19,4 @@ permalink: pretty
 # Sass
 sass:
     style: compressed
+    sass_dir: vendor/components

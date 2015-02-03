@@ -2,16 +2,16 @@
 ---
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic|Open+Sans+Condensed:700");
 
-$fa-font-path: "../vendor/components/fontawesome/fonts";
-@import '../vendor/components/fontawesome/scss/font-awesome';
+$fa-font-path: "/fontawesome/fonts";
+@import 'fontawesome/scss/font-awesome';
 
-$icon-font-path: "../vendor/components/bootstrap-sass/assets/fonts/bootstrap/";
+$icon-font-path: "bootstrap-sass/assets/fonts/bootstrap/";
 $soft-red: #ff5454;
 $link-color: $soft-red;
 $link-hover-color: darken($link-color, 40%);
-@import '../vendor/components/bootstrap-sass/assets/stylesheets/_bootstrap';
+@import 'bootstrap-sass/assets/stylesheets/_bootstrap';
 
-@import '../vendor/components/jasny-bootstrap/scss/jasny-bootstrap';
+@import 'jasny-bootstrap/scss/jasny-bootstrap';
 
 html, body {
   height: 100%;
